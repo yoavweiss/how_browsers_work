@@ -92,18 +92,9 @@
                     <ul>
                         <li>Chrome &amp; Opera(Blink)</li>
                         <li>Firefox (Gecko)</li>
-                        <li>IE</li>
+                        <li>IE=>EDGE</li>
                         <li>Safari (WebKit)</li>
                     </ul>
-                </section>
-                <section class="new">
-                    <h1>HTTP vs. HTTPS</h1>
-                    <aside class=notes>
-                    HTTP is insecure. HTTPS over TLS.
-                    HTTP2 is a better performing protocol.
-                    Traditionally everything was over HTTP, but we've discovered that it's a huge security problem.
-                    Moving everything to HTTPS is a slow process that already started.
-                    </aside>
                 </section>
                 <section class="new">
                     <h1>What's a Web page?</h1>
@@ -123,12 +114,16 @@
                     </ul>
                 </section>
                 <section>
-                    <h1>Images?</h1>
+                    <h1>Images</h1>
+                    <ul>
+                        <li>Content</li>
+                        <li>Background</li>
+                        <li>Multiple image types</li>
+                    </ul>
                     <aside class=notes>
                     There are content images and background images.
                     Also, there are many supported file formats: PNG, GIF JPG. Then browser specific image types: WebP, JPEGXR, JP2K
 
-                    !!!! end of first hour !!!!
                     </aside>
                 </section>
                 <section class="new">
@@ -138,6 +133,10 @@
                     Then the browser discovers the rest of the resources in the page and start to download them.
                     </aside>
             </section>
+                <section class=new>
+                    <h1>How a resource is downloaded?</h1>
+                    <img src="resources/request.png">
+                </section>
                 <section class="new">
                     <h1>TCP connections</h1>
                     <aside class=notes>
@@ -145,27 +144,6 @@
                     HTTP1.1 introduced connection keep alive (sort of).
                     Limited to 2 connections per host
                     </aside>
-                </section>
-                <section>
-                    <h1>Latency killed performance</h1>
-                </section>
-                <section>
-                    <h1>What did we do?</h1>
-                    <aside class=notes>
-                    Anyone has ideas how we traditionally tackled that connection number limitation?
-                    What were the problems with that?
-                    </aside>
-                </section>
-                <section>
-                    <h1>Sharding has its costs</h1>
-                    <img src="resources/tcp_slow_start.png">
-                    <aside class=notes>
-                    Also - extra congestion!
-                    </aside>
-                </section>
-                <section class=new>
-                    <h1>How a resource is downloaded?</h1>
-                    <img src="resources/request.png">
                 </section>
                 <section class="new">
                     <h1>HTML parsing</h1>
@@ -181,6 +159,11 @@
                     <aside class=notes>
                     CSS zen garden. Show what CSS means 
                     </aside>
+                </section>
+                <section class=new>
+                    <img src="resources/critical_rendering_path.png">
+
+                </section>
                 </section>
                 <section class="new">
                     <h1>Resource loading</h1>
